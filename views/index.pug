@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='../css/index.css')
+    title Students
+  body
+    h1 Bienvenue sur Students
+    form(action="/users/register" method="post")
+      label(for="firstName") Prénom :
+      input(type="text" id="firstName" name="firstName")
+      br
+      label(for="lastName") Nom :
+      input(type="text" id="lastName" name="lastName")
+      br
+      label(for="email") Email :
+      input(type="email" id="email" name="email")
+      br
+      label(for="password") Mot de passe :
+      input(type="password" id="password" name="password")
+      br
+      label(for="confirmPassword") Confirmer mot de passe :
+      input(type="password" id="confirmPassword" name="confirmPassword")
+      br
+      input(type="submit" value="S'inscrire")

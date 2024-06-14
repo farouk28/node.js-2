@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='../css/login.css')
+    title Login
+  body
+    h1 Connexion
+    form(action="/login" method="post")
+      label(for="email") Email :
+      input(type="email" id="email" name="email")
+      br
+      br
+      label(for="password") Mot de passe :
+      input(type="password" id="password" name="password")
+      br
+      br
+      input(type="submit" value="Se connecter")
